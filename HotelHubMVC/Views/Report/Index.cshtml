@@ -1,0 +1,28 @@
+﻿@model HotelHubMVC.ViewModels.ReportViewModel
+<div style="background-color:white">
+    <div id="reserve-form">
+        <form class="rectangle-reserve form-floating row p-4" method="post" asp-controller="Report" asp-action="GetReport">
+            <div class="col">
+                <label for="children">Branches:</label>
+                <select class="form-control m-1" id="children" name="BranchId" asp-for="GetReportDTO.BranchId" required>
+                    @foreach (var branch in Model.Branches)
+                    {
+                        <option value="@branch.Id">@branch.BranchLocation</option>
+                    }
+                </select>
+            </div>
+            <div class="col">
+                <label for="time">Time:</label>
+                <select class="form-control m-1" id="children" name="Time" asp-for="GetReportDTO.BranchId" required>
+                    <option value="Daily">Daily</option>
+                    <option value="Weekly ">Weekly </option>
+                    <option value="Monthly">Monthly</option>
+                </select>
+            </div>
+            <div class="col">
+                <label></label>
+                <button class="btn form-control m-1" style="background:#fea116;color:white" type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+</div>

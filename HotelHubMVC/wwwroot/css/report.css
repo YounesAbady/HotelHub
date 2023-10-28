@@ -1,0 +1,26 @@
+﻿.circle {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 25px;
+    border: 5px double #ccc; /* Border color */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow properties */
+}
+
+.number {
+    font-size: 24px;
+    color: #0f172b;
+}
+
+.label {
+    font-size: 14px;
+    color: #fea116;
+    margin-top: 10px;
+}

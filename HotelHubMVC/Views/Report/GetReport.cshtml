@@ -1,0 +1,29 @@
+﻿@model APIContract.ReportDTOs.ReportResultDTO
+<div style="background-color:white;">
+    <div id="report" style="text-align:center;align-content:center">
+        <h4 style="margin-top:25px;">Avaliable Rooms</h4>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g0">
+            @foreach (var room in Model.AvaliableRooms)
+            {
+                <div class="col p-2 d-flex justify-content-center">
+                    <div class="circle">
+                        <div class="number">@room.Quantity</div>
+                        <div class="label">@room.RoomName</div>
+                    </div>
+                </div>
+            }
+        </div>
+        <h4 style="margin-top:25px;">Used Rooms</h4>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g0">
+            @for (int x = 0; x < Model.AllRooms.Count(); x++)
+            {
+                <div class="col p-2 d-flex justify-content-center">
+                    <div class="circle">
+                        <div class="number">@(Model.AllRooms[x].Quantity-Model.AvaliableRooms[x].Quantity)</div>
+                        <div class="label">@Model.AllRooms[x].RoomName</div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

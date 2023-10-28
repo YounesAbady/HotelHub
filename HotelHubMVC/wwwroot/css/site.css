@@ -1,0 +1,137 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #f1f8ff;
+    /*    margin-bottom: 60px;
+*/ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.carousel-caption {
+    position: absolute;
+    top: -25px; /* Initial position above the carousel */
+    left: 0;
+    right: 0;
+    transition: top 0.5s;
+}
+
+.carousel-item.active .carousel-caption {
+    top: 35%;
+}
+
+* {
+    -webkit-text-stroke: 0.08px black; /* Webkit (Safari/Chrome) */
+    text-stroke: 0.08px black; /* Standard property */
+}
+
+.rectangle-reserve {
+    height: 100px;
+    background-color: white;
+    border: 1px #000; /* Border color */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow properties */
+}
+
+.box-about {
+    width: 150px;
+    height: 150px;
+    border: 5px double #ccc; /* Border color */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow properties */
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+h4:before {
+    content: "";
+    border: 1px solid #fea116;
+    position: absolute;
+    width: 50%;
+    top: 13px;
+    left: -75%;
+}
+
+h4:after {
+    content: "";
+    border: 1px solid #fea116;
+    width: 50%;
+    position: absolute;
+    top: 13px;
+    left: 125%;
+}
+
+h4 {
+    position: relative;
+    display: inline-block;
+}
+
+.outer-square-room-types {
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.inner-square-room-types {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 5px double #ccc; /* Border color */
+}
+
+    .inner-square-room-types img {
+        width: 100%;
+        height: 100%;
+    }
+
+.title-room-types {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0f172b;
+}
+
+.description-room-types {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #666565;
+    padding: 10px;
+}
+
+.outer-square-room-types:hover {
+    background-color: #fea116;
+    color: white;
+}
+
+    .outer-square-room-types:hover .title-room-types {
+        color: white;
+    }
+
+    .outer-square-room-types:hover .description-room-types {
+        color: white;
+    }
+
+@media (max-width: 880px) {
+    .rectangle-reserve {
+        height:200px;
+    }
+}

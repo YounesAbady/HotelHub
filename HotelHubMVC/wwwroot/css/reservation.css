@@ -1,0 +1,17 @@
+﻿html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.accordion-container {
+    border: 5px double #ccc;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
