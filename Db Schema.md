@@ -101,6 +101,6 @@ Relationships:
 | --- | --- |
 | One to Many | branches to branch_pictures |
 | One to Many | rooms to rooms_pictures |
-| Many to Many | branches to rooms |
+| One to Many | branches to rooms |
 | One to Many | room_type to rooms |
 | One to Many | reservations to reserved_rooms |
